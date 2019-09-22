@@ -20,26 +20,11 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonClick(_ sender: UIButton) {
-        guard let login = loginTextField.text else {
-            titleLabel.text = "Не верно! Повторите."
-            titleLabel.textColor = UIColor.red
+        guard usersDataIsRight() else {
+            showEnterError()
             return
         }
-        guard let password = passwordTextField.text else {
-            titleLabel.text = "Не верно! Повторите."
-            titleLabel.textColor = UIColor.red
-            return
-        }
-        
-        if login == "login", password == "123456" {
-            titleLabel.text = "Здравствуйте " + login + "!"
-            titleLabel.textColor = UIColor.black
-
-        } else {
-            titleLabel.text = "Не верно! Повторите."
-            titleLabel.textColor = UIColor.red
-        }
-
+        performSegue(withIdentifier: "fromLoginController", sender: self)
     }
     
     
@@ -83,6 +68,19 @@ class LoginViewController: UIViewController {
         let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
+    }
+    
+    func usersDataIsRight() -> Bool {
+        guard let login = loginTextField.text else { return false }
+        guard let password = passwordTextField.text else { return false }
+        return login == "login" && password == "123456"
+    }
+    
+    func showEnterError() {
+        let alert = UIAlertController(title: "Внимание!", message: "Вы указали не верные учетные данные!", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true)
     }
 }
 
