@@ -35,6 +35,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980511F0233777F400E0900E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				985498D5232EAA1F003AC61F /* Assets.xcassets */,
+				985498D2232EAA1D003AC61F /* Main.storyboard */,
+				985498D7232EAA1F003AC61F /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		980511F12337780800E0900E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				985498CE232EAA1D003AC61F /* AppDelegate.swift */,
+				980511F22337783F00E0900E /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		980511F22337783F00E0900E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				985498D0232EAA1D003AC61F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		980511F32337784D00E0900E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		985498C2232EAA1D003AC61F = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +88,9 @@
 		985498CD232EAA1D003AC61F /* Vk&Maykov */ = {
 			isa = PBXGroup;
 			children = (
-				985498CE232EAA1D003AC61F /* AppDelegate.swift */,
-				985498D0232EAA1D003AC61F /* ViewController.swift */,
-				985498D2232EAA1D003AC61F /* Main.storyboard */,
-				985498D5232EAA1F003AC61F /* Assets.xcassets */,
-				985498D7232EAA1F003AC61F /* LaunchScreen.storyboard */,
+				980511F0233777F400E0900E /* Resource */,
+				980511F12337780800E0900E /* Source */,
+				980511F32337784D00E0900E /* Views */,
 				985498DA232EAA1F003AC61F /* Info.plist */,
 			);
 			path = "Vk&Maykov";
