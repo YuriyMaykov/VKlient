@@ -11,7 +11,7 @@ import UIKit
 class UserModel {
     let userId: Int
     let userName: String
-    let userAvatar: UIImage
+    let userAvatar: UIImage?
     let userEmail: String
     
     init(userId: Int, userName: String, userAvatar: UIImage, userEmail: String) {

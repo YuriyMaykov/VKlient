@@ -14,6 +14,8 @@
 		985498D9232EAA1F003AC61F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985498D7232EAA1F003AC61F /* LaunchScreen.storyboard */; };
 		98E95E712345E6E900E2ABAA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E702345E6E900E2ABAA /* UserModel.swift */; };
 		98E95E732345E71200E2ABAA /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E722345E71200E2ABAA /* GroupModel.swift */; };
+		98E95E7523466A3400E2ABAA /* FriendAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E7423466A3400E2ABAA /* FriendAboutController.swift */; };
+		98E95E7723466B1800E2ABAA /* FriendAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E7623466B1800E2ABAA /* FriendAboutCell.swift */; };
 		98F083252344F5C800C9A9D9 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F083242344F5C800C9A9D9 /* FriendsController.swift */; };
 		98F083272345131900C9A9D9 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F083262345131900C9A9D9 /* FriendsCell.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		985498DA232EAA1F003AC61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E95E702345E6E900E2ABAA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98E95E722345E71200E2ABAA /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		98E95E7423466A3400E2ABAA /* FriendAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAboutController.swift; sourceTree = "<group>"; };
+		98E95E7623466B1800E2ABAA /* FriendAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAboutCell.swift; sourceTree = "<group>"; };
 		98F083242344F5C800C9A9D9 /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
 		98F083262345131900C9A9D9 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,7 @@
 			children = (
 				985498D0232EAA1D003AC61F /* LoginViewController.swift */,
 				98F083242344F5C800C9A9D9 /* FriendsController.swift */,
+				98E95E7423466A3400E2ABAA /* FriendAboutController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				98F083262345131900C9A9D9 /* FriendsCell.swift */,
+				98E95E7623466B1800E2ABAA /* FriendAboutCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E95E7523466A3400E2ABAA /* FriendAboutController.swift in Sources */,
 				985498D1232EAA1D003AC61F /* LoginViewController.swift in Sources */,
 				98F083252344F5C800C9A9D9 /* FriendsController.swift in Sources */,
+				98E95E7723466B1800E2ABAA /* FriendAboutCell.swift in Sources */,
 				985498CF232EAA1D003AC61F /* AppDelegate.swift in Sources */,
 				98E95E712345E6E900E2ABAA /* UserModel.swift in Sources */,
 				98F083272345131900C9A9D9 /* FriendsCell.swift in Sources */,

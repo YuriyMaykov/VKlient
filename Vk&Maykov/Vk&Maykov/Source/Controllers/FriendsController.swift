@@ -9,82 +9,42 @@
 import UIKit
 
 class FriendsController: UITableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    
-/*    // MARK: - Table view data source
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cities.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath) as! CityCell
-        cell.nameLabel.text = cities[indexPath.row].name
-        cell.cityImageView.image = cities[indexPath.row].image
-        return cell
-    }
-*/
-    
+   
+    var friends: [UserModel] = [
+        UserModel(userId: 1, userName: "Дубаков Петр Сергеевич", userAvatar: UIImage(named: "user1")!, userEmail: "user1@uasersmail.ru"),
+        UserModel(userId: 2, userName: "Петренко Николай", userAvatar: UIImage(named: "user2")!, userEmail: "user2@uasersmail.ru"),
+        UserModel(userId: 3, userName: "Василий Журавликов", userAvatar: UIImage(named: "user3")!, userEmail: "user3@uasersmail.ru"),
+        UserModel(userId: 11, userName: "Какой то надоедливый дядька, заспамил своими дурацкими предложениями !", userAvatar: UIImage(named: "Noimage")!, userEmail: "user11@uasersmail.ru"),
+        UserModel(userId: 4, userName: "User4", userAvatar: UIImage(named: "user4")!, userEmail: "user4@uasersmail.ru"),
+        UserModel(userId: 5, userName: "User5", userAvatar: UIImage(named: "user5")!, userEmail: "user5@uasersmail.ru"),
+        UserModel(userId: 6, userName: "User6", userAvatar: UIImage(named: "user6")!, userEmail: "user6@uasersmail.ru"),
+        UserModel(userId: 7, userName: "User7", userAvatar: UIImage(named: "user7")!, userEmail: "user7@uasersmail.ru"),
+        UserModel(userId: 8, userName: "User8", userAvatar: UIImage(named: "user8")!, userEmail: "user8@uasersmail.ru"),
+        UserModel(userId: 9, userName: "User9", userAvatar: UIImage(named: "user9")!, userEmail: "user9@uasersmail.ru"),
+        UserModel(userId: 10, userName: "User10", userAvatar: UIImage(named: "user10")!, userEmail: "user10@uasersmail.ru")
+    ]
     
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return friends.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as! FriendsCell
-        cell.friendNameLabel.text = "hello my friend"
-        //cell.friendAvatar.animationImages = 
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendsCell", for: indexPath) as! FriendsCell
+        cell.friendNameLabel.text = friends[indexPath.row].userName
+        cell.friendAvatar.image = friends[indexPath.row].userAvatar
         return cell
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+    // MARK: - Table view delegate
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation
