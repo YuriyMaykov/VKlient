@@ -73,7 +73,7 @@ class LoginViewController: UIViewController {
     func usersDataIsRight() -> Bool {
         guard let login = loginTextField.text else { return false }
         guard let password = passwordTextField.text else { return false }
-        return login == "login" && password == "123456"
+        return login == "" && password == ""
     }
     
     func showEnterError() {
