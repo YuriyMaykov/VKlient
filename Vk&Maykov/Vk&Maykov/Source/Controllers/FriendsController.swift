@@ -13,6 +13,7 @@ class FriendsController: UITableViewController {
         super.viewDidLoad()
 
     }
+    
    
     var friends: [UserModel] = [
         UserModel(userId: 1, userName: "Щеголев Петр Сергеевич", userAvatar: UIImage(named: "user1")!, userEmail: "user1@uasersmail.ru"),

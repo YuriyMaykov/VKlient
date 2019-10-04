@@ -182,7 +182,7 @@
                                 <connections>
                                     <outlet property="friendAvatar" destination="3V8-nu-rZG" id="ZzL-ZE-83S"/>
                                     <outlet property="friendNameLabel" destination="RIh-TP-N9T" id="LeE-Z6-58k"/>
-                                    <segue destination="gd6-h9-gpz" kind="show" identifier="toFriendAbout" destinationCreationSelector="fromFriendsController:" id="Yin-qP-K8w"/>
+                                    <segue destination="gd6-h9-gpz" kind="show" identifier="toFriendAbout" id="Yin-qP-K8w"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

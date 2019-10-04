@@ -11,10 +11,14 @@ import UIKit
 private let reuseIdentifier = "friendAboutCell"
 
 class FriendAboutController: UICollectionViewController {
+
+    var friend = UserModel(
+        userId: Int.init(),
+        userName: String.init(),
+        userAvatar: UIImage.init(),
+        userEmail: String.init()
+    )
     
-    @IBSegueAction func fromFriendsController(_ coder: NSCoder) -> FriendAboutController? {
-        return <#FriendAboutController(coder: coder)#>
-    }
     
     // MARK: UICollectionViewDataSource
 
