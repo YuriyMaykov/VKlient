@@ -10,4 +10,10 @@ import UIKit
 
 class FriendAboutCell: UICollectionViewCell {
     
+    @IBOutlet weak var friendAvatar: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        friendAvatar.image = nil
+    }
 }

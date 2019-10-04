@@ -182,6 +182,7 @@
                                 <connections>
                                     <outlet property="friendAvatar" destination="3V8-nu-rZG" id="ZzL-ZE-83S"/>
                                     <outlet property="friendNameLabel" destination="RIh-TP-N9T" id="LeE-Z6-58k"/>
+                                    <segue destination="gd6-h9-gpz" kind="show" identifier="toFriendAbout" destinationCreationSelector="fromFriendsController:" id="Yin-qP-K8w"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -191,9 +192,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ICD-y7-pQL"/>
-                    <connections>
-                        <segue destination="gd6-h9-gpz" kind="show" id="p0X-Gz-cF4"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ai-WU-4Bs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,7 +260,7 @@
             </objects>
             <point key="canvasLocation" x="145" y="470"/>
         </scene>
-        <!--Friend About Controller-->
+        <!--О пользователе-->
         <scene sceneID="8O3-XP-EV7">
             <objects>
                 <collectionViewController id="gd6-h9-gpz" customClass="FriendAboutController" customModule="Vk_Maykov" customModuleProvider="target" sceneMemberID="viewController">
@@ -291,6 +289,9 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="150" height="150"/>
+                                <connections>
+                                    <outlet property="friendAvatar" destination="cme-42-tE3" id="V5w-ZA-qZ2"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -298,7 +299,7 @@
                             <outlet property="delegate" destination="gd6-h9-gpz" id="mwH-xJ-hhO"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="WgR-U2-sRL"/>
+                    <navigationItem key="navigationItem" title="О пользователе" id="Uny-Ik-igI"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oq-lb-HDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

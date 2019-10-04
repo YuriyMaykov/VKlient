@@ -15,7 +15,7 @@ class FriendsController: UITableViewController {
     }
    
     var friends: [UserModel] = [
-        UserModel(userId: 1, userName: "Дубаков Петр Сергеевич", userAvatar: UIImage(named: "user1")!, userEmail: "user1@uasersmail.ru"),
+        UserModel(userId: 1, userName: "Щеголев Петр Сергеевич", userAvatar: UIImage(named: "user1")!, userEmail: "user1@uasersmail.ru"),
         UserModel(userId: 2, userName: "Петренко Николай", userAvatar: UIImage(named: "user2")!, userEmail: "user2@uasersmail.ru"),
         UserModel(userId: 3, userName: "Василий Журавликов", userAvatar: UIImage(named: "user3")!, userEmail: "user3@uasersmail.ru"),
         UserModel(userId: 11, userName: "Какой то надоедливый дядька, заспамил своими дурацкими предложениями !", userAvatar: UIImage(named: "Noimage")!, userEmail: "user11@uasersmail.ru"),
