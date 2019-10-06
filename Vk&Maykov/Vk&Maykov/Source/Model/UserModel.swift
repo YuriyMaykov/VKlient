@@ -9,10 +9,10 @@
 import UIKit
 
 class UserModel {
-    let userId: Int
-    let userName: String
-    let userAvatar: UIImage?
-    let userEmail: String
+    var userId: Int
+    var userName: String
+    var userAvatar: UIImage?
+    var userEmail: String
     
     init(userId: Int, userName: String, userAvatar: UIImage, userEmail: String) {
         self.userId = userId

@@ -12,6 +12,10 @@
 		985498D4232EAA1D003AC61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985498D2232EAA1D003AC61F /* Main.storyboard */; };
 		985498D6232EAA1F003AC61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985498D5232EAA1F003AC61F /* Assets.xcassets */; };
 		985498D9232EAA1F003AC61F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985498D7232EAA1F003AC61F /* LaunchScreen.storyboard */; };
+		98E6F03B2349F3840015AF7A /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F03A2349F3840015AF7A /* MyGroupsCell.swift */; };
+		98E6F03D2349F3B10015AF7A /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F03C2349F3B10015AF7A /* AllGroupsCell.swift */; };
+		98E6F03F2349F4BF0015AF7A /* MyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F03E2349F4BF0015AF7A /* MyGroupsController.swift */; };
+		98E6F0412349F4E20015AF7A /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F0402349F4E20015AF7A /* AllGroupsController.swift */; };
 		98E95E712345E6E900E2ABAA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E702345E6E900E2ABAA /* UserModel.swift */; };
 		98E95E732345E71200E2ABAA /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E722345E71200E2ABAA /* GroupModel.swift */; };
 		98E95E7523466A3400E2ABAA /* FriendAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E95E7423466A3400E2ABAA /* FriendAboutController.swift */; };
@@ -28,6 +32,10 @@
 		985498D5232EAA1F003AC61F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		985498D8232EAA1F003AC61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		985498DA232EAA1F003AC61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E6F03A2349F3840015AF7A /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
+		98E6F03C2349F3B10015AF7A /* AllGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
+		98E6F03E2349F4BF0015AF7A /* MyGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsController.swift; sourceTree = "<group>"; };
+		98E6F0402349F4E20015AF7A /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
 		98E95E702345E6E900E2ABAA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98E95E722345E71200E2ABAA /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		98E95E7423466A3400E2ABAA /* FriendAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAboutController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,8 @@
 				985498D0232EAA1D003AC61F /* LoginViewController.swift */,
 				98F083242344F5C800C9A9D9 /* FriendsController.swift */,
 				98E95E7423466A3400E2ABAA /* FriendAboutController.swift */,
+				98E6F03E2349F4BF0015AF7A /* MyGroupsController.swift */,
+				98E6F0402349F4E20015AF7A /* AllGroupsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 			children = (
 				98F083262345131900C9A9D9 /* FriendsCell.swift */,
 				98E95E7623466B1800E2ABAA /* FriendAboutCell.swift */,
+				98E6F03A2349F3840015AF7A /* MyGroupsCell.swift */,
+				98E6F03C2349F3B10015AF7A /* AllGroupsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,9 +216,13 @@
 				98E95E7523466A3400E2ABAA /* FriendAboutController.swift in Sources */,
 				985498D1232EAA1D003AC61F /* LoginViewController.swift in Sources */,
 				98F083252344F5C800C9A9D9 /* FriendsController.swift in Sources */,
+				98E6F03B2349F3840015AF7A /* MyGroupsCell.swift in Sources */,
 				98E95E7723466B1800E2ABAA /* FriendAboutCell.swift in Sources */,
 				985498CF232EAA1D003AC61F /* AppDelegate.swift in Sources */,
 				98E95E712345E6E900E2ABAA /* UserModel.swift in Sources */,
+				98E6F03D2349F3B10015AF7A /* AllGroupsCell.swift in Sources */,
+				98E6F03F2349F4BF0015AF7A /* MyGroupsController.swift in Sources */,
+				98E6F0412349F4E20015AF7A /* AllGroupsController.swift in Sources */,
 				98F083272345131900C9A9D9 /* FriendsCell.swift in Sources */,
 				98E95E732345E71200E2ABAA /* GroupModel.swift in Sources */,
 			);

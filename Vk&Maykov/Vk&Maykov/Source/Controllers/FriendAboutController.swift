@@ -15,7 +15,7 @@ class FriendAboutController: UICollectionViewController {
     var friend = UserModel(
         userId: Int.init(),
         userName: String.init(),
-        userAvatar: UIImage.init(),
+        userAvatar: UIImage(named: "Noimage")!,
         userEmail: String.init()
     )
     
@@ -27,10 +27,10 @@ class FriendAboutController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FriendAboutCell
+        cell.friendAvatar.image = friend.userAvatar
+        cell.userNameLabel.text = friend.userName
+   
         return cell
     }
 

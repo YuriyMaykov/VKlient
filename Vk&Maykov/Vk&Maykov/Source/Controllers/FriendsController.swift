@@ -9,12 +9,11 @@
 import UIKit
 
 class FriendsController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
-   
     var friends: [UserModel] = [
         UserModel(userId: 1, userName: "Щеголев Петр Сергеевич", userAvatar: UIImage(named: "user1")!, userEmail: "user1@uasersmail.ru"),
         UserModel(userId: 2, userName: "Петренко Николай", userAvatar: UIImage(named: "user2")!, userEmail: "user2@uasersmail.ru"),
@@ -28,7 +27,7 @@ class FriendsController: UITableViewController {
         UserModel(userId: 9, userName: "User9", userAvatar: UIImage(named: "user9")!, userEmail: "user9@uasersmail.ru"),
         UserModel(userId: 10, userName: "User10", userAvatar: UIImage(named: "user10")!, userEmail: "user10@uasersmail.ru")
     ]
-    
+
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friends.count
@@ -47,14 +46,18 @@ class FriendsController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let friendAboutVC = segue.destination as? FriendAboutController {
+            if (segue.identifier == "toFriendAbout") {
+                guard let selRow = tableView.indexPathForSelectedRow?.row else {return}
+                friendAboutVC.friend.userId = friends[selRow].userId
+                friendAboutVC.friend.userName = friends[selRow].userName
+                friendAboutVC.friend.userAvatar = friends[selRow].userAvatar
+                friendAboutVC.friend.userEmail = friends[selRow].userEmail
+            }
+        }
     }
-    */
 
 }

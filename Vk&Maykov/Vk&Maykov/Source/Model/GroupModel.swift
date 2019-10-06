@@ -9,11 +9,15 @@
 import UIKit
 
 class GroupModel{
-    let groupId: Int
-    let groupName: String
+    var groupId: Int
+    var groupName: String
+    var groupImage: UIImage
+    var groupDesc: String
     
-    init(groupId: Int, groupName: String) {
+    init(groupId: Int, groupName: String, groupImage: UIImage, groupDesc: String) {
         self.groupId = groupId
         self.groupName = groupName
+        self.groupImage = groupImage
+        self.groupDesc = groupDesc
     }
 }

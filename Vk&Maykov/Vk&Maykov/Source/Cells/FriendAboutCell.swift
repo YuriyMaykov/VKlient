@@ -11,9 +11,11 @@ import UIKit
 class FriendAboutCell: UICollectionViewCell {
     
     @IBOutlet weak var friendAvatar: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
         friendAvatar.image = nil
+        userNameLabel.text = ""
     }
 }
